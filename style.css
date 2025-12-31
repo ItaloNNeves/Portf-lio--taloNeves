@@ -513,7 +513,7 @@ p{
     padding:16px 16px;
     border-radius: 16px;
     box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.13);
-    transition: .3s ease;
+    transition: .2s ease;
 
     img{
         width: 100%;
@@ -543,6 +543,7 @@ p{
             background-color: #686666;
             border-radius: 8px;
             margin: 0;
+            
         }
     }
 }
@@ -561,8 +562,107 @@ p{
         background-color: #1f1f1f;
         border-radius: 18px;
         transition: .3s ease;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
     }
     a:hover{
       background-color: #424242;  
+    }
+}
+.servi{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 32px 16px;
+    color: var(--cor-texto);
+    background-color:#3d3d3dfb;
+
+    h3{
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1;
+        color: rgb(208, 209, 208);
+    }
+    h4{
+        font-size: 24px;
+        /* padding: 10px; */
+        line-height: 1;
+        position: relative;
+        margin-bottom: 20px;
+
+    }
+    h4::before{
+        content: "";
+        width: 70%;
+        height: 1px;
+        background-color: #9e9c9c;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        translate: -50%;
+    }
+}
+.serv-me{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    article{
+        flex: 0 0 calc((100% - 90px) / 4);
+        background-color: #646464;
+        padding: 10px;
+        border-radius: 16px;
+        box-shadow: 0 0 5px #dfdede7e;
+        transition: .2s ease;
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .title-serv{
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #acbdf5;
+        }
+        .dec-title-serv{
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+    }
+    article:hover{
+        scale: 1.05;
+    }
+    article:hover .title-serv{
+        color: #1d1d1d;
+    }
+    article:hover .dec-title-serv{
+        color: #1d1d1d;
+    }
+    article::before{
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background-color: #c0bebe;
+        top: 0;
+       left: 0;
+        z-index: -1;
+        transition: .3s ease;
+    }
+    article:hover::before{
+        content: "";
+        width: 100%;
+        
     }
 }
