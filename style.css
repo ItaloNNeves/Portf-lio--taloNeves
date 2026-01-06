@@ -1159,7 +1159,10 @@ section .content {
             }
         }
     }
+    .serv-me {
+        justify-content: center;
+    }
     .servi article {
-        flex: 0 0 calc((100% ) / 1);
+        flex: 0 0 calc((90% ) / 1);
     }
 }
