@@ -7,7 +7,10 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+html{
+    scroll-behavior: smooth;
 
+}
 :root {
     --cor-fundo: #1d1d1d;
     /* Preto escuro */
@@ -26,7 +29,6 @@
 
 body {
     width: 100%;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -1000,7 +1002,7 @@ section .content {
             top: 60px;
             right: 15px;
             width: 170px;
-            background-color: rgba(95, 95, 95, 0.781);
+            background-color: rgba(95, 95, 95, 0.123);
             backdrop-filter: blur(10px);
             padding: 0 20px;
             overflow: hidden;

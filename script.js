@@ -47,3 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // (opcional) - se o menu for aberto via CSS por outro meio, sincronize no load
   syncMenu(burger.checked);
 });
+
+//parte da traduçao
+
