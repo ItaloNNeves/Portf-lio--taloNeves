@@ -401,13 +401,72 @@ section .content {
         height: 16px;
     }
 
-    a:hover {
-        background-color: #d8d8d8;
-    }
+     .github:hover {
+            background-color: #1a1919;
+            color: #ffff;
+            transform: translateY(-3px);
+        }
+
+        .linkedin:hover {
+            background-color: #2e80eb;
+            color: #ffff;
+            transform: translateY(-3px);
+        }
+
+        .insta:hover {
+            background: conic-gradient(#7f51e9 0deg,
+                    #b14cf0 60deg,
+                    #e90cb2 140deg,
+                    #ff0c0c 220deg,
+                    #f78b30 290deg,
+                    #7f51e9 360deg);
+
+            color: #ffff;
+            transform: translateY(-3px);
+        }
 }
 
 .projetos {
     height: 900px;
+}
+.carrosel{
+    display: flex;
+    justify-content: start;
+    margin: 0 auto;
+    
+    overflow-x:hidden;
+    /* max-width: 1150px; */
+    width: 90%;
+    /* gap: 60px; */
+    padding: 0px 16px 40px;
+    
+}
+/* .carrosel::-webkit-scrollbar{
+    display: none;
+} */
+.boxcarro{
+    /* width: 100%; */
+    
+    display: flex;
+    gap: 60px;
+    
+    justify-content: center;
+    animation: rolx 15s infinite linear;
+    div{
+        font-size: 30px;
+        color: white;
+    }
+    div:nth-child(8){
+        margin-right: 60px;
+    }
+}
+@keyframes rolx {
+    to {
+        transform: translateX(0);
+    }
+    from {
+        transform: translateX(-100%);
+    }
 }
 
 /* SOBRE MIM */
@@ -1044,7 +1103,7 @@ section .content {
 
     .content {
         flex-direction: column;
-        padding: 100px 16px 40px;
+        padding: 70px 16px 40px;
 
         .info-left {
             align-items: center;
@@ -1093,7 +1152,12 @@ section .content {
 
         }
     }
-
+    .carrosel{
+        width: 100%;
+    }
+    .boxcarro div{
+        font-size: 20px;
+    }
     .uni-projects {
         justify-content: center;
     }
